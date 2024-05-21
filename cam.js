@@ -1,7 +1,7 @@
 const video=document.querySelector(".video")
 const canva=document.querySelector(".canvas")
 const strip=document.querySelector(".strip")
-const ctx=canvas.getContext('2d')
+const ctx=canva.getContext('2d')
 
 function getvid(){
     navigator.mediaDevice.getUserMedia({video:true,audio:false})
