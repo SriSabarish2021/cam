@@ -1,9 +1,10 @@
 const video=document.querySelector(".video")
 const canva=document.querySelector(".canvas")
 const strip=document.querySelector(".strip")
+const ctx=canva.textContent('2d')
 
 function getvid(){
-    navbar.mediaDevice.getUserMedia({video:true,audio:false})
+    navigator.mediaDevice.getUserMedia({video:true,audio:false})
     .then((localmedia) => {
         video.src=window.URL.createObjectURL(localmedia)
         video.play()
